@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Adote um Amigo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header-container">
+    <h1>🐾 Adote um Amigo</h1>
+
+    <nav>
+      <a href="#cachorros">Cachorros</a>
+      <a href="#gatos">Gatos</a>
+    </nav>
+  </div>
+</header>
+
+<section class="banner">
+  <div class="banner-content">
+    <div class="banner-text">
+      <h2>Encontre seu novo melhor amigo 🐾</h2>
+      <p>Adote um animal e transforme uma vida — inclusive a sua.</p>
+      <a href="#cachorros" class="btn">Ver animais</a>
+    </div>
+
+    <div class="banner-img">
+      <img src="img/banner.jpeg" alt="Adoção de animais">
+    </div>
+  </div>
+</section>
+
+<section class="sobre">
+  <div class="sobre-box">
+    <h2>Sobre o projeto</h2>
+    <p>
+      Este site foi desenvolvido com o objetivo de facilitar a adoção de animais,
+      conectando pessoas a pets que precisam de um novo lar.
+    </p>
+  </div>
+</section>
+
+<section id="cachorros" class="container">
+  <h2>Cachorros para adoção</h2>
+
+  <div class="card">
+    <img src="img/cachorro1.jpeg" alt="Rex">
+    <h3>Rex</h3>
+    <p>1 ano</p>
+    <p>Dócil e brincalhão.</p>
+    <button onclick="adotar('Rex')">Adotar</button>
+  </div>
+
+  <div class="card">
+    <img src="img/cachorro2.jpeg" alt="Thor">
+    <h3>Thor</h3>
+    <p>2 anos</p>
+    <p>Muito ativo e ama brincar.</p>
+    <button onclick="adotar('Thor')">Adotar</button>
+  </div>
+
+</section>
+
+<section id="gatos" class="container">
+  <h2>Gatos para adoção</h2>
+
+  <div class="card">
+    <img src="img/gato1.jpeg" alt="Mia">
+    <h3>Mia</h3>
+    <p>1 ano</p>
+    <p>Carinhosa e tranquila.</p>
+    <button onclick="adotar('Mia')">Adotar</button>
+  </div>
+
+  <div class="card">
+    <img src="img/gato2.jpeg" alt="Luna">
+    <h3>Luna</h3>
+    <p>1 ano</p>
+    <p>Dorminhoca e leal.</p>
+    <button onclick="adotar('Luna')">Adotar</button>
+  </div>
+
+</section>
+
+<section class="vantagens">
+  <h2>Por que adotar?</h2>
+  <ul>
+    <li>Você salva uma vida</li>
+    <li>Ganha um companheiro fiel</li>
+    <li>Ajuda a reduzir o abandono</li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2026 - Projeto acadêmico</p>
+  <p>Contato: exemplo@email.com</p>
+</footer>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="fechar" onclick="fecharModal()">&times;</span>
+    <h2>🐾 Interesse registrado!</h2>
+    <p id="mensagemModal"></p>
+    <button onclick="fecharModal()">Fechar</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
